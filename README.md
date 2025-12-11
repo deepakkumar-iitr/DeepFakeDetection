@@ -17,15 +17,14 @@ This repository provides a curated collection of research papers, datasets, benc
 ---
 ## Concepts
 1. **Detecting Artificial Images via Vanishing-Point Geometry** \
-   powerful clue for spotting AI-generated is through geometry of the scene and not the pixels.
-   Real photographs follow strict perspective rules because they originate from a single camera viewpoint. One of these rules is the presence of a dominant vanishing point, where parallel lines      in the world appear to meet.
+   Powerful clue for spotting AI-generated is through geometry of the scene and not the pixels.
+   Real photographs follow strict perspective rules because they originate from a single camera viewpoint. One of these rules is the presence of a dominant vanishing point, where parallel lines    in the world appear to meet.
+   AI-generated images, however, often fail this test. Instead of aligning toward one shared vanishing point, different parts of the scene may drift toward multiple, inconsistent convergence    
+   points.
 
-  AI-generated images, however, often fail this test. Instead of aligning toward one shared vanishing point, different parts of the scene may drift toward multiple, inconsistent convergence     
-  points.
+   Why? Because generative models assemble scenes in segments, and they don’t always maintain a unified 3D perspective across the entire frame.
 
-  Why? Because generative models assemble scenes in segments, and they don’t always maintain a unified 3D perspective across the entire frame.
-
-  These subtle geometric inconsistencies create a reliable signal: even when the image looks perfect, the perspective may quietly reveal it’s generated.
+   These subtle geometric inconsistencies create a reliable signal: even when the image looks perfect, the perspective may quietly reveal it’s generated.
   
 2. **Fast Fourier Transform (FFT)** \
    Real vs AI: The Hidden Fingerprint
